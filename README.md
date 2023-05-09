@@ -6,4 +6,4 @@ bo game van florian gio juliette noa marissa
 
 0.02 : zwaartekracht zonder speler draaien
 
-fix unity compiler : unity project weggehaald en weer aangemaakt
+0.03 : player blijft rechtstaan en goede planeet
