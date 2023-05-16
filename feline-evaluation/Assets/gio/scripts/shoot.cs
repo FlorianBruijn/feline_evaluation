@@ -12,7 +12,7 @@ public class shoot : MonoBehaviour
     }
     // Start is called before the first frame update
 
-    public KeyCode shootKey = KeyCode.LeftControl;
+    public KeyCode shootKey = KeyCode.Mouse0;
     public void CallShot()
     {
         StartCoroutine(AwaitDelay(delay));
@@ -26,7 +26,7 @@ public class shoot : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             GameObject ob = Instantiate(prefab);
             ob.transform.position = transform.position;
