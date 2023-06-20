@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 143764101}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2856,6 +2856,37 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a9562a58dfa0e5444a3c4388cbf6bca5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9859505586a090b49b258159cc735307, type: 3}
+--- !u!1 &1355774694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9859505586a090b49b258159cc735307, type: 3}
+  m_PrefabInstance: {fileID: 1355774693}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1355774695
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355774694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.641788, y: 7.924993, z: 4.9964275}
+  m_Center: {x: 2.1989243, y: 6.8709154, z: -6.651501}
+--- !u!114 &1355774696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355774694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7090ed977467a3447bd98d7858c832a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Vulkaan
 --- !u!1 &1381172526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2243562687825912332, guid: 6a88460fdc2b3f14baf25d0b27f7552f, type: 3}
