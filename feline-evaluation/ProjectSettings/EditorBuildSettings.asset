@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/1. Menu.unity
+    guid: d01319e79330a61458f75fd570189730
+  - enabled: 1
+    path: Assets/Scenes/3. Ocean.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/5. Zand.unity
+    guid: 4e06bd6e88a1a9c4387de39d36a62a83
+  - enabled: 1
+    path: Assets/Scenes/4. Vulkaan.unity
+    guid: 7c6e5e6a2040acb439fbd40500719b96
   m_configObjects: {}
