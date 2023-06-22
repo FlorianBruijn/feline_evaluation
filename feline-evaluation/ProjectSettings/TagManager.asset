@@ -6,6 +6,7 @@ TagManager:
   tags:
   - planet
   - enemy
+  - Pickup
   layers:
   - Default
   - TransparentFX
