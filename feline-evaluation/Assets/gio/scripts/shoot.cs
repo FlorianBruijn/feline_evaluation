@@ -1,41 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class shoot : MonoBehaviour
 {
-    public GameObject prefab;
-    public float delay;
-    public void createProjectile()
-    {
+    public Rigidbody projectile;
+    public float speed = 20;
 
-    }
-    // Start is called before the first frame update
-
-    public KeyCode shootKey = KeyCode.LeftControl;
-    public void CallShot()
-    {
-        StartCoroutine(AwaitDelay(delay));
-    }
-    private IEnumerator AwaitDelay(float time)
-    {
-        yield return new WaitForSeconds(time);
-        createProjectile();
-    }
-
+    // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            GameObject ob = Instantiate(prefab);
-            ob.transform.position = transform.position;
-            ob.transform.rotation = transform.rotation;
-            Destroy(ob, 3f);
+            Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
+            instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, -speed));
         }
-        if (Input.GetKeyDown(shootKey))
+        
+    }
+
+    private void OnCollisionEnter(Collision coll)
+    {
+        handleHit(coll.gameObject);
+    }
+    private void OnTriggerEnter(Collider coll)
+    {
+        handleHit(coll.gameObject);
+    }
+    private void handleHit(GameObject other)
+    {
+        if (other.tag == "enemy")
         {
-            CallShot();
+            Destroy(other, 2f);
         }
     }
 }
