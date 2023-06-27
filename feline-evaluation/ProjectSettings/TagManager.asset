@@ -7,6 +7,8 @@ TagManager:
   - planet
   - enemy
   - Pickup
+  - bullet
+  - ship
   layers:
   - Default
   - TransparentFX
