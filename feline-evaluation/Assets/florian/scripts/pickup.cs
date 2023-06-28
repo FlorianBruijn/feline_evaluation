@@ -9,6 +9,7 @@ public class pickup : MonoBehaviour
     public int points = 0;
     public Slider slider;
     public bool can_return = false;
+    public int nextScene;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,7 @@ public class pickup : MonoBehaviour
         }
         if(other.tag == "ship" && can_return)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(nextScene);
         }
     }
 }
