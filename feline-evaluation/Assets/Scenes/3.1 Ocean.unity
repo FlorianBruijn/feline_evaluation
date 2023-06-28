@@ -488,6 +488,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1890910595786045333, guid: 6a88460fdc2b3f14baf25d0b27f7552f, type: 3}
+--- !u!95 &193218832 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1479732766, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+  m_PrefabInstance: {fileID: 7685642915459956970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &197980503 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2914413575082383075, guid: 6a88460fdc2b3f14baf25d0b27f7552f, type: 3}
@@ -3565,6 +3570,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1479732766, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1030f81388f40164e88eb6a67c847a5e, type: 2}
     - target: {fileID: 3543067897349698677, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3573,10 +3582,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7191563242944754888, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: m_Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191563242944754888, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7685642914283209604, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: planet
       value: 
       objectReference: {fileID: 1204525676}
+    - target: {fileID: 7685642914283209604, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 193218832}
     - target: {fileID: 7685642914283209605, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3624,6 +3645,10 @@ PrefabInstance:
     - target: {fileID: 7685642914283209606, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685642915459956972, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: nextScene
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7685642915601492588, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: m_Enabled

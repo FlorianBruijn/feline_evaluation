@@ -10,6 +10,8 @@ public class player_controler : MonoBehaviour
     public float jump = -10000f;
     public bool onFloor;
 
+    public Animator animator;
+
     public float horInput;
     public float verInput;
 
@@ -40,6 +42,14 @@ public class player_controler : MonoBehaviour
         setInput();
         move();
 
+        if(Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.A))
+        {
+            animator.SetTrigger("walk");
+        }
+        else
+        {
+            animator.SetTrigger("idle");
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && onFloor)
         {

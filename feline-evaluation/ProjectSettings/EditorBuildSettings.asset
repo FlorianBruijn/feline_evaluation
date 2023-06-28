@@ -12,12 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/2. Rocket.unity
     guid: 383d87848b1a5404c947e2106400ccd7
   - enabled: 1
-    path: Assets/Scenes/3. Ocean.unity
+    path: Assets/Scenes/3.1 Ocean.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/4. Vulkaan.unity
+    path: Assets/Scenes/3.2 rocket.unity
+    guid: 443e406536be0b94e95e7d55c264f4ea
+  - enabled: 1
+    path: Assets/Scenes/4.1 Vulkaan.unity
     guid: 7c6e5e6a2040acb439fbd40500719b96
   - enabled: 1
-    path: Assets/Scenes/5. Zand.unity
+    path: Assets/Scenes/4.2 rocket.unity
+    guid: e307ce767501979488b02fa0bd1b4288
+  - enabled: 1
+    path: Assets/Scenes/5.1 Zand.unity
     guid: 4e06bd6e88a1a9c4387de39d36a62a83
+  - enabled: 1
+    path: Assets/Scenes/5.2 rocket.unity
+    guid: 5a580c530ecc853479aeeb66285abe11
   m_configObjects: {}
