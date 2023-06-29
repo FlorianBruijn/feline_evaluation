@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/1. Menu.unity
+    path: Assets/Scenes/Eind Scherm.unity
     guid: d01319e79330a61458f75fd570189730
   - enabled: 1
     path: Assets/Scenes/2. Rocket.unity
