@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3148,19 +3148,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 14f5d653cdfc9a241a9d187802352c3e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 14f5d653cdfc9a241a9d187802352c3e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000026692538
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 14f5d653cdfc9a241a9d187802352c3e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000026692534
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 14f5d653cdfc9a241a9d187802352c3e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7071067
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 14f5d653cdfc9a241a9d187802352c3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5642,7 +5642,7 @@ PrefabInstance:
     - target: {fileID: -3285378800646228901, guid: 127498e70a66cf048849e74c94a71c37, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 52b49cda2f8a4f44ca213e9b6771fae6, type: 2}
+      objectReference: {fileID: 2100000, guid: 0bcba4dc5a05c064e80d7ff6640d7efc, type: 2}
     - target: {fileID: -1922876027896310315, guid: 127498e70a66cf048849e74c94a71c37, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5743,6 +5743,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -304.862
       objectReference: {fileID: 0}
+    - target: {fileID: 5689214077219933787, guid: 127498e70a66cf048849e74c94a71c37, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2384cd959e3b94741b82d70a6c14f00f, type: 2}
+    - target: {fileID: 5858499578241736013, guid: 127498e70a66cf048849e74c94a71c37, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 52b49cda2f8a4f44ca213e9b6771fae6, type: 2}
     - target: {fileID: 5938389961882081579, guid: 127498e70a66cf048849e74c94a71c37, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

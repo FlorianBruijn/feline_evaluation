@@ -1,10 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class fps_controler : MonoBehaviour
 {
     public float speed;
+
+    public TMPro.TextMeshProUGUI obj;
+
+    public int nextScene;
 
     public float PlayerHeight;
     public LayerMask WhatIsGround;
@@ -17,6 +24,7 @@ public class fps_controler : MonoBehaviour
     Vector3 moveDir;
 
     Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,5 +59,16 @@ public class fps_controler : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "console")
+        {
+            obj.text = "press e to continu";
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                SceneManager.LoadScene(nextScene);
+            }
+        }
     }
 }
