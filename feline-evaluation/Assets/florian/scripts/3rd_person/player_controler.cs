@@ -42,6 +42,7 @@ public class player_controler : MonoBehaviour
         setInput();
         move();
 
+        //set animation triggers
         if(Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.A))
         {
             animator.SetTrigger("walk");
@@ -59,12 +60,14 @@ public class player_controler : MonoBehaviour
 
     private void setInput()
     {
+        //get inputs
         horInput = Input.GetAxisRaw("Horizontal");
         verInput = Input.GetAxisRaw("Vertical");
     }
 
     private void move()
     {
+        //move player
         moveDir = orientation.up * verInput + orientation.right * horInput;
 
         rb.AddForce(moveDir.normalized * speed, ForceMode.Force);
@@ -73,6 +76,7 @@ public class player_controler : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //check ground enter
         if(collision.gameObject.tag == "planet")
         {
             onFloor = true;
@@ -80,6 +84,7 @@ public class player_controler : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
+        //check ground exit
         if (collision.gameObject.tag == "planet")
         {
             onFloor = false;
