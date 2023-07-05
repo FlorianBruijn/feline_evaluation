@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 854d0e15273b3cc49a1466d78752f865, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.017612714, g: 0.027333025, b: 0.0398602, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1390,6 +1390,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6b16c3532f005da41aadac46bff6bb68, type: 2}
+    - target: {fileID: -3215555783603854218, guid: 6a88460fdc2b3f14baf25d0b27f7552f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -3195828791156449804, guid: 6a88460fdc2b3f14baf25d0b27f7552f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1445,6 +1449,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6a88460fdc2b3f14baf25d0b27f7552f, type: 3}
       propertyPath: m_Name
       value: wereld eind product
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a88460fdc2b3f14baf25d0b27f7552f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 928911833541816158, guid: 6a88460fdc2b3f14baf25d0b27f7552f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3651,6 +3659,10 @@ PrefabInstance:
     - target: {fileID: 7685642914283209606, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685642914283209606, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7685642915459956972, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: text
