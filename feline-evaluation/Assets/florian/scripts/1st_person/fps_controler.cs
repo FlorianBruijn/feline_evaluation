@@ -13,6 +13,12 @@ public class fps_controler : MonoBehaviour
 
     public int nextScene;
 
+    public GameObject vid;
+
+    private bool at_console = false;
+
+    public bool vidOver = false;
+
     public float PlayerHeight;
     public LayerMask WhatIsGround;
     bool Grounded;
@@ -53,22 +59,47 @@ public class fps_controler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MyInput();
-        Grounded = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.5f + 0.2f, WhatIsGround);
-    }
-    private void FixedUpdate()
-    {
-        MovePlayer();
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "console")
+        if (!vidOver)
         {
-            obj.text = "press e to continu";
-            if (Input.GetKeyDown(KeyCode.E))
+            StartCoroutine(Sec());
+        }
+        if (vidOver)
+        {
+            MyInput();
+            Grounded = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.5f + 0.2f, WhatIsGround);
+            if (at_console && Input.GetKeyDown(KeyCode.E))
             {
                 SceneManager.LoadScene(nextScene);
             }
         }
+    }
+    private void FixedUpdate()
+    {
+        if (vidOver)
+        {
+            MovePlayer();
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "console")
+        {
+            obj.text = "press e to continu";
+            at_console = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "console")
+        {
+            obj.text = "return to console";
+            at_console = false;
+        }
+    }
+    IEnumerator Sec()
+    {
+        yield return new WaitForSeconds(6.5f);
+        vid.SetActive(false);
+        vidOver = true;
     }
 }
