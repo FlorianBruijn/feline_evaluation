@@ -3596,6 +3596,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7191563242944754888, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: m_Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191563242944754888, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7685642914283209604, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: planet
       value: 
