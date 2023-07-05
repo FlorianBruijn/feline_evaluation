@@ -214,10 +214,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7191563242944754888, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: m_Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191563242944754888, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7685642914283209604, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: planet
       value: 
       objectReference: {fileID: 1957921858}
+    - target: {fileID: 7685642914283209604, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 24127831}
     - target: {fileID: 7685642914283209605, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -268,6 +280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+--- !u!95 &24127831 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1479732766, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+  m_PrefabInstance: {fileID: 24127830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &24268543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4538610331167954922, guid: b7b08c3db23f5ed4d807dda691b3c8be, type: 3}
