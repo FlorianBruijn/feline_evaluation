@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Eind Scherm.unity
-    guid: d01319e79330a61458f75fd570189730
+    path: Assets/Scenes/1. Menu 1.unity
+    guid: dddfb4d13f15d084c9be9d896de7932e
   - enabled: 1
     path: Assets/Scenes/2. Rocket.unity
     guid: 383d87848b1a5404c947e2106400ccd7
@@ -29,7 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/5.2 rocket.unity
     guid: 5a580c530ecc853479aeeb66285abe11
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 3d6cf56c589017c418d02bde510fd631
+  - enabled: 1
+    path: Assets/Scenes/Eind Scherm.unity
+    guid: d01319e79330a61458f75fd570189730
   m_configObjects: {}
