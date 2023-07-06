@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/5.2 rocket.unity
     guid: 5a580c530ecc853479aeeb66285abe11
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 3d6cf56c589017c418d02bde510fd631
   m_configObjects: {}
