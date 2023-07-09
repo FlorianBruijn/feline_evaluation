@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class player_controler : MonoBehaviour
 {
+    [SerializeField] private GameObject vid;
+
     public Rigidbody rb;
     public Transform planet;
     public float acceleration = 9.807f;
@@ -22,6 +25,8 @@ public class player_controler : MonoBehaviour
 
     private Quaternion _lookRotation;
     private Vector3 _direction;
+
+    private bool beg;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,29 +37,36 @@ public class player_controler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //rotation to planet
-        _direction = (planet.position - transform.position).normalized;
-        _lookRotation = Quaternion.LookRotation(_direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, 1);
-        //gravity
-        rb.AddForce((planet.position - transform.position).normalized * acceleration);
-
-        setInput();
-        move();
-
-        //set animation triggers
-        if(Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.A))
+        if (beg)
         {
-            animator.SetTrigger("walk");
+            //rotation to planet
+            _direction = (planet.position - transform.position).normalized;
+            _lookRotation = Quaternion.LookRotation(_direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, 1);
+            //gravity
+            rb.AddForce((planet.position - transform.position).normalized * acceleration);
+
+            setInput();
+            move();
+
+            //set animation triggers
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A))
+            {
+                animator.SetTrigger("walk");
+            }
+            else
+            {
+                animator.SetTrigger("idle");
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space) && onFloor)
+            {
+                rb.AddForce((planet.position - transform.position).normalized * jump);
+            }
         }
         else
         {
-            animator.SetTrigger("idle");
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && onFloor)
-        {
-            rb.AddForce((planet.position - transform.position).normalized * jump);
+            StartCoroutine(sleep());
         }
     }
 
@@ -89,5 +101,11 @@ public class player_controler : MonoBehaviour
         {
             onFloor = false;
         }
+    }
+    private IEnumerator sleep()
+    {
+        yield return new WaitForSeconds(2);
+        beg = true;
+        vid.SetActive(false);
     }
 }

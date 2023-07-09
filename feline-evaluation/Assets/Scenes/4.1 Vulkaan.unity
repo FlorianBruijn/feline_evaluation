@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.01345861, g: 0.0208847, b: 0.03046199, a: 1}
+  m_IndirectSpecularColor: {r: 0.017612714, g: 0.027333025, b: 0.0398602, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -223,6 +223,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7685642914283209604, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+      propertyPath: vid
+      value: 
+      objectReference: {fileID: 886538002}
+    - target: {fileID: 7685642914283209604, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
       propertyPath: planet
       value: 
       objectReference: {fileID: 1957921858}
@@ -291,6 +295,11 @@ PrefabInstance:
 --- !u!95 &24127831 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1479732766, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+  m_PrefabInstance: {fileID: 24127830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &24127832 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7685642915335646617, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
   m_PrefabInstance: {fileID: 24127830}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &24268543 stripped
@@ -3021,6 +3030,71 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8530459506952857525, guid: b7b08c3db23f5ed4d807dda691b3c8be, type: 3}
+--- !u!1 &851906901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851906903}
+  - component: {fileID: 851906902}
+  m_Layer: 0
+  m_Name: ocean_to_volcano
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &851906902
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851906901}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 85b013a057333ce418bbd20f6e94a6b0, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 24127832}
+  m_TargetTexture: {fileID: 8400000, guid: 264c27b5f85c0654484625a6de09f3f1, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!4 &851906903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851906901}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &864103678 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8383124558419344257, guid: b7b08c3db23f5ed4d807dda691b3c8be, type: 3}
@@ -3078,6 +3152,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3313900681326472401, guid: b7b08c3db23f5ed4d807dda691b3c8be, type: 3}
+--- !u!1 &886538002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4780475128898252014, guid: 00892720b24460747a7019dbbb7b866c, type: 3}
+  m_PrefabInstance: {fileID: 24127830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &890412536 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2914413575082383075, guid: b7b08c3db23f5ed4d807dda691b3c8be, type: 3}
